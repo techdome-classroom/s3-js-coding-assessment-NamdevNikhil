@@ -10,7 +10,8 @@ var isValid = function(s) {
             st.push(i);
         }
         else{
-            if(!st.lenght || (i === ')' && st[st.lenght - 1] !== '('))
+            if(!st.lenght || (i === ')' && st[st.lenght - 1] !== '(')
+            )
         }
     }
     return st.length === 0;
