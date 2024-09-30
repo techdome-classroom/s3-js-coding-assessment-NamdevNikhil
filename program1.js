@@ -21,6 +21,7 @@ var isValid = function(s) {
             s.push(i);
         }
     }
+    return s.length === 0;
 };
 
 module.exports = { isValid };
