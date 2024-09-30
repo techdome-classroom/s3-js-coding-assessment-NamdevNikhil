@@ -9,6 +9,10 @@ var isValid = function(s) {
         '}' : '{',
         ']' : '['
     };
+
+    for(let i of s){
+        if(i in )
+    }
 };
 
 module.exports = { isValid };
