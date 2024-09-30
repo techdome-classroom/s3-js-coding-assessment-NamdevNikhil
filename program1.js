@@ -12,16 +12,16 @@ var isValid = function(s) {
 
     for(let i of st){
         if(i in brackets){
-            const top = s.length > 0 ? s.pop() : '#';
+            const top = st.length > 0 ? st.pop() : '#';
             if(top !== brackets[i]){
                 return false;
             }
         }
         else{
-            s.push(i);
+            st.push(i);
         }
     }
-    return s.length === 0;
+    return st.length === 0;
 };
 
 module.exports = { isValid };
