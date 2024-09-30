@@ -13,7 +13,9 @@ var isValid = function(s) {
             const top = st.pop();
             if((i === ')' && top !== '(')
             || (i === '}' && top !== '{')
-            || (i === ']' && top != '['))
+            || (i === ']' && top != '[')){
+                return false;
+            }
         }
     }
     return st.length === 0;
