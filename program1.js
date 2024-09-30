@@ -11,7 +11,7 @@ var isValid = function(s) {
         }
         else{
             const top = st.pop();
-            if()
+            if((i === ')'))
         }
     }
     return st.length === 0;
