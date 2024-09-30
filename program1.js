@@ -15,6 +15,7 @@ var isValid = function(s) {
             || (i === ']' && st[st.length - 1] !== '[')){
                 return false;
             }
+            st.pop();
         }
     }
     return st.length === 0;
