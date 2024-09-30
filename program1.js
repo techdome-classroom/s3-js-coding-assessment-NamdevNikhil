@@ -10,7 +10,7 @@ var isValid = function(s) {
             stack.push(c);
         } else { 
             if (!stack.length ||
-            if(!st.lenght || (i === ')' && st[st.length - 1] !== '(')
+                (c === ')' && stack[stack.length - 1] !== '(') ||
             || (i === '}' && st[st.length - 1] !== '{')
             || (i === ']' && st[st.length - 1] !== '[')){
                 return false;
