@@ -17,8 +17,14 @@ var romanToInt = function(s) {
     for (let i = 0; i < s.length; i++){
         let curr = roman[s[i]];
         let next = roman[s[i+1]];
-        if(next && curr)
+        if(next && curr < next){
+            ans -= curr;
+        }
+        else{
+            ans += curr;
+        }
     }
+    return total;
 };
 
 
