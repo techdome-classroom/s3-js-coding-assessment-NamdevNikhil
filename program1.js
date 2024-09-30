@@ -12,7 +12,9 @@ var isValid = function(s) {
         else{
             if(!st.lenght || (i === ')' && st[st.length - 1] !== '(')
             || (i === '}' && st[st.length - 1] !== '{')
-            || (i === ']' && st[st.length - 1] !== '['))
+            || (i === ']' && st[st.length - 1] !== '[')){
+                return false;
+            }
         }
     }
     return st.length === 0;
