@@ -12,7 +12,8 @@ var isValid = function(s) {
         else{
             const top = st.pop();
             if((i === ')' && top !== '(')
-            or (i === '}' && top !== '{'))
+            or (i === '}' && top !== '{')
+            or )
         }
     }
     return st.length === 0;
