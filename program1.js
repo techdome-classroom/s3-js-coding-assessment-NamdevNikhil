@@ -16,7 +16,9 @@ var isValid = function(s) {
             if(top !== brackets[i]){
                 return false;
             }
-            
+        }
+        else{
+            s.push(i);
         }
     }
 };
