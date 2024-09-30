@@ -18,7 +18,7 @@ var isValid = function(s) {
             stack.pop();
         }
     }
-    return st.length === 0;
+    return !stack.length;
 };
 
 module.exports = { isValid };
