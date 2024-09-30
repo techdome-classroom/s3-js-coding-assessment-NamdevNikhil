@@ -6,15 +6,7 @@ var isValid = function(s) {
     const st = [];
 
     for(let i of st){
-        if(i in brackets){
-            const top = st.length > 0 ? st.pop() : '#';
-            if(top !== brackets[i]){
-                return false;
-            }
-        }
-        else{
-            st.push(i);
-        }
+        if(i === '(' or i === '{' or i ==='[')
     }
     return st.length === 0;
 };
