@@ -14,11 +14,6 @@ var romanToInt = function(s) {
     };
 
     for (let i = 0; i < s.length-1; i++){
-        }if(next && curr < next){
-            ans -= curr;
-        }
-        else{
-            ans += curr;
         
     }
     return total;
