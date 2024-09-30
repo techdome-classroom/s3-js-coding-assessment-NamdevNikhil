@@ -10,7 +10,7 @@ var isValid = function(s) {
             st.push(i);
         }
         else{
-            if(!st.lenght || )
+            if(!st.lenght || (i === ')' && st[]))
         }
     }
     return st.length === 0;
