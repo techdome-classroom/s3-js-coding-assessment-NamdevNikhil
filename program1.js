@@ -13,7 +13,7 @@ var isValid = function(s) {
     for(let i of s){
         if(i in brackets){
             const top = s.length > 0 ? s.pop() : '#';
-            if()
+            if(top !== )
         }
     }
 };
