@@ -6,7 +6,7 @@ var isValid = function(s) {
     let stack = [];
 
     for (let c of s) {
-        if(i === '(' || i === '{' || i ==='['){
+        if (c === '(' || c === '{' || c === '[') {
             st.push(i);
         }
         else{
