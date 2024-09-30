@@ -22,6 +22,7 @@ var romanToInt = function(s) {
             ans += roman[s[i]];
         }
     }
+    if(ans < 0) ans *= -1;
     return ans;
 };
 
