@@ -13,7 +13,6 @@ var romanToInt = function(s) {
         'M' : 1000
     };
 
-    let ans = 0;
     for (let i = 0; i < s.length; i++){
         let curr = roman[s[i]];
         let next = roman[s[i+1]];
