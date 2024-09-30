@@ -10,7 +10,7 @@ var isValid = function(s) {
             st.push(i);
         }
         else{
-            
+            const top = st.
         }
     }
     return st.length === 0;
