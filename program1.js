@@ -13,7 +13,7 @@ var isValid = function(s) {
             const top = st.pop();
             if((i === ')' && top !== '(')
             || (i === '}' && top !== '{')
-            || (i === ']') )
+            || (i === ']' && top != '['))
         }
     }
     return st.length === 0;
