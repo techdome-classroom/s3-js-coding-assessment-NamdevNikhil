@@ -14,8 +14,6 @@ var romanToInt = function(s) {
     };
 
     for (let i = 0; i < s.length-1; i++){
-        let curr = roman[s[i]];
-        let next = roman[s[i+1]];
         if(next && curr < next){
             ans -= curr;
         }
