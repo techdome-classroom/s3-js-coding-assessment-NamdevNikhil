@@ -15,7 +15,8 @@ var romanToInt = function(s) {
 
     let ans = 0;
     for (let i = 0; i < s.length; i++){
-        let curr = roman[s[i]]
+        let curr = roman[s[i]];
+        let next = 
     }
 };
 
