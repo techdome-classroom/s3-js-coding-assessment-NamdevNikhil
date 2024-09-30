@@ -6,7 +6,7 @@ var isValid = function(s) {
     const st = [];
 
     for(let i of st){
-        if(i === '(' or i === '{' or i ==='['){
+        if(i === '(' || i === '{' or i ==='['){
             st.push(i);
         }
         else{
