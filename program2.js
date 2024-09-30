@@ -13,17 +13,19 @@ var romanToInt = function(s) {
         'M': 1000
     };
 
-    let ans = 0;
-    for (let i = 0; i < s.length; i++){
-        if(roman[s[i]] < roman[s[i+1]]){
-            ans -= roman[s[i]];
-        }
-        else{
-            ans += roman[s[i]];
+    let result = 0;
+
+    for (let i = s.length - 1; i >= 0; i--) {
+        const currValue = romanValues[s[i]];
+
+        if (i < s.length - 1 && currValue < romanValues[s[i + 1]]) {
+            result -= currValue;
+        } else {
+            result += currValue;
         }
     }
-    if(ans < 0) ans *= -1;
-    return ans;
+
+    return result;
 };
 
 
