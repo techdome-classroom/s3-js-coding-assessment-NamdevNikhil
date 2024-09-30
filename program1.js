@@ -10,12 +10,7 @@ var isValid = function(s) {
             st.push(i);
         }
         else{
-            const top = st.pop();
-            if((i === ')' && top !== '(')
-            || (i === '}' && top !== '{')
-            || (i === ']' && top != '[')){
-                return false;
-            }
+            if(!st.lenght)
         }
     }
     return st.length === 0;
