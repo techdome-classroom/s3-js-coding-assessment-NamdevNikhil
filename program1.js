@@ -11,7 +11,8 @@ var isValid = function(s) {
         }
         else{
             if(!st.lenght || (i === ')' && st[st.lenght - 1] !== '(')
-                || (i === '}'))
+            || (i === '}' && st[st.length - 1] !== '{')
+            || (i === ']' && st[st.length -1]))
         }
     }
     return st.length === 0;
