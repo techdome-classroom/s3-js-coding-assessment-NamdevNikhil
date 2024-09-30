@@ -11,7 +11,9 @@ var isValid = function(s) {
     };
 
     for(let i of s){
-        if(i in )
+        if(i in brackets){
+            const top = s.
+        }
     }
 };
 
