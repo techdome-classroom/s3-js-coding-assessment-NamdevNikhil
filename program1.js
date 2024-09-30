@@ -5,7 +5,9 @@
 var isValid = function(s) {
     const s = [];
     const brackets = {
-        '('
+        ')' : '(',
+        '}' : '{',
+        ']' : '['
     }
 };
 
