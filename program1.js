@@ -3,7 +3,7 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    let st = [];
+    let stack = [];
 
     for(let i of st){
         if(i === '(' || i === '{' || i ==='['){
